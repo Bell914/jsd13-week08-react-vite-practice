@@ -1,0 +1,140 @@
+/* Split Button Container */
+.split-button-container {
+  position: relative;
+  display: inline-flex;
+  align-items: stretch;
+  vertical-align: middle;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-family: var(--sans);
+}
+
+/* Base button styles */
+.split-button-main,
+.split-button-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent);
+  color: #ffffff;
+  border: 1px solid var(--accent-border);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 16px;
+  line-height: 1.5;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.split-button-main {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+  padding-right: 14px;
+}
+
+.split-button-trigger {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-left: none;
+  padding: 8px 10px;
+}
+
+.split-button-main:hover,
+.split-button-trigger:hover {
+  filter: brightness(1.1);
+  background-color: var(--accent);
+}
+
+.split-button-main:active,
+.split-button-trigger:active {
+  filter: brightness(0.92);
+}
+
+.split-button-trigger.is-open {
+  background-color: var(--accent);
+  filter: brightness(0.9);
+}
+
+.split-button-main:focus-visible,
+.split-button-trigger:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  z-index: 2;
+}
+
+.split-button-main:disabled,
+.split-button-trigger:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  filter: none;
+}
+
+/* Chevron SVG Icon */
+.split-button-chevron {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.split-button-trigger.is-open .split-button-chevron {
+  transform: rotate(180deg);
+}
+
+/* Secondary Dialog / Dropdown Menu */
+.split-button-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 180px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px;
+  box-shadow: var(--shadow);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  animation: split-dropdown-fade 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: top right;
+}
+
+@keyframes split-dropdown-fade {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Menu items */
+.split-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  color: var(--text-h);
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.split-menu-item:hover {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.split-menu-item:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+}

@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import { Accordion, AccordionItem } from './components/Accordion'
+import { SplitButton, SplitButtonMenu } from './components/SplitButton'
 import './App.css'
 
 function App() {
@@ -22,13 +23,25 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+        <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+          <button
+            type="button"
+            className="counter"
+            onClick={() => setCount((count) => count + 1)}
+          >
+            Count is {count}
+          </button>
+          <SplitButton
+            aria-label="Overview split button"
+            id="overview-split-button"
+            onClick={function Xs(){}}
+            onSecondaryDialogDidHide={function Xs(){}}
+            onSecondaryDialogDidShow={function Xs(){}}
+            secondaryDialogContent={function Xs(){}}
+          >
+            Button
+          </SplitButton>
+        </div>
       </section>
 
       <div className="ticks"></div>
