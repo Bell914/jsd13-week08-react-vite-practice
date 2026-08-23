@@ -5,6 +5,8 @@ import heroImg from './assets/hero.png'
 import { Accordion, AccordionItem } from './components/Accordion'
 import { SplitButton, SplitButtonMenu } from './components/SplitButton'
 import { Heading } from './components/Heading'
+import { ThemeProvider } from './components/ThemeProvider'
+import { Button } from './components/Button'
 import './App.css'
 
 function App() {
@@ -24,7 +26,7 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-        <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
+        <div style={{ display: 'flex', gap: '12px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center' }}>
           <button
             type="button"
             className="counter"
@@ -42,6 +44,29 @@ function App() {
           >
             Button
           </SplitButton>
+          <ThemeProvider
+            themeConfig={{
+              colors: {
+                black: {
+                  'primary-color': 'slateblue',
+                  'primary-hover-color': 'darkslateblue'
+                },
+                dark: {
+                  'primary-color': 'salmon',
+                  'primary-hover-color': 'darksalmon'
+                },
+                light: {
+                  'primary-color': 'green',
+                  'primary-hover-color': 'darkgreen'
+                }
+              },
+              name: 'overview-theme'
+            }}
+          >
+            <Button>
+              Themed
+            </Button>
+          </ThemeProvider>
         </div>
       </section>
 

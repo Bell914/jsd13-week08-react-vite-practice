@@ -1,0 +1,6 @@
+/* ThemeProvider Container */
+.vibe-theme-provider {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
