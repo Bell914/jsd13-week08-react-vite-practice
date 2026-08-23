@@ -1,0 +1,29 @@
+.monday-storybook-use-clickable-props {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background: var(--bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 8px;
+  color: var(--text-h);
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+}
+
+.monday-storybook-use-clickable-props:hover {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.monday-storybook-use-clickable-props:active {
+  transform: scale(0.98);
+}
+
+.monday-storybook-use-clickable-props:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

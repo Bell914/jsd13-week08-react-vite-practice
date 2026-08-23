@@ -11,6 +11,7 @@ import { Clickable } from './components/Clickable'
 import { Box } from './components/Box'
 import { ActiveDescendantOverview } from './components/ActiveDescendantOverview'
 import { AfterFirstRenderDemo } from './components/AfterFirstRenderDemo'
+import { ClickablePropsDemo } from './components/ClickablePropsDemo'
 import './App.css'
 
 function App() {
@@ -140,6 +141,13 @@ function App() {
       <section style={{ padding: '48px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
         <Heading>After First Render Hook</Heading>
         <AfterFirstRenderDemo />
+      </section>
+
+      <div className="ticks"></div>
+
+      <section style={{ padding: '48px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+        <Heading>Clickable Props Hook</Heading>
+        <ClickablePropsDemo />
       </section>
 
       <div className="ticks"></div>
