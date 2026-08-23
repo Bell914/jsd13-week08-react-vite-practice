@@ -1,0 +1,79 @@
+/* Heading Component Styles */
+.vibe-heading {
+  margin: 0;
+  padding: 0;
+  font-family: var(--heading, var(--sans));
+  color: var(--text-h);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+/* Heading Sizes / Types */
+.vibe-heading--h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.vibe-heading--h2 {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.vibe-heading--h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.vibe-heading--h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.vibe-heading--h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.vibe-heading--h6 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Weights */
+.vibe-heading--bold {
+  font-weight: 700;
+}
+
+.vibe-heading--medium {
+  font-weight: 500;
+}
+
+.vibe-heading--normal {
+  font-weight: 400;
+}
+
+.vibe-heading--light {
+  font-weight: 300;
+}
+
+/* Ellipsis */
+.vibe-heading--ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Colors */
+.vibe-heading--primary {
+  color: var(--text-h);
+}
+
+.vibe-heading--secondary {
+  color: var(--text);
+}
+
+.vibe-heading--accent {
+  color: var(--accent);
+}

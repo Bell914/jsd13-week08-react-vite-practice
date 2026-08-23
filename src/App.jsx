@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import { Accordion, AccordionItem } from './components/Accordion'
 import { SplitButton, SplitButtonMenu } from './components/SplitButton'
+import { Heading } from './components/Heading'
 import './App.css'
 
 function App() {
@@ -46,8 +47,10 @@ function App() {
 
       <div className="ticks"></div>
 
-      <section style={{ padding: '48px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <h2 style={{ marginBottom: '24px' }}>Accordion Component</h2>
+      <section style={{ padding: '48px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+        <Heading>
+          Title
+        </Heading>
         <Accordion id="multi-active-accordion" allowMultiple defaultIndex={[1, 3]}>
           <AccordionItem id="multi-notifications" title="Notifications">
             <div
