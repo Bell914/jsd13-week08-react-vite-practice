@@ -1,0 +1,37 @@
+/* Clickable Wrapper Styles */
+.vibe-clickable {
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: inline-flex;
+  text-align: inherit;
+  font: inherit;
+  color: inherit;
+  user-select: none;
+  outline: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.vibe-clickable:hover {
+  opacity: 0.92;
+}
+
+.vibe-clickable:active {
+  transform: scale(0.98);
+}
+
+.vibe-clickable:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.vibe-clickable:disabled,
+.vibe-clickable.is-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  pointer-events: none;
+}

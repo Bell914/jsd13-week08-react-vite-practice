@@ -1,0 +1,70 @@
+/* Box Primitive Styles */
+.vibe-box {
+  box-sizing: border-box;
+  color: var(--text-h);
+  transition: all 0.2s ease;
+}
+
+/* Border */
+.vibe-box--border {
+  border: 1px solid var(--border);
+}
+
+/* Padding */
+.vibe-box--padding-none {
+  padding: 0;
+}
+
+.vibe-box--padding-xs {
+  padding: 4px 8px;
+}
+
+.vibe-box--padding-small {
+  padding: 8px 16px;
+}
+
+.vibe-box--padding-medium {
+  padding: 16px 24px;
+}
+
+.vibe-box--padding-large {
+  padding: 24px 32px;
+}
+
+.vibe-box--padding-xl {
+  padding: 32px 48px;
+}
+
+/* Border Radius / Rounded */
+.vibe-box--rounded-none {
+  border-radius: 0;
+}
+
+.vibe-box--rounded-small {
+  border-radius: 6px;
+}
+
+.vibe-box--rounded-medium {
+  border-radius: 12px;
+}
+
+.vibe-box--rounded-large {
+  border-radius: 18px;
+}
+
+.vibe-box--rounded-full {
+  border-radius: 9999px;
+}
+
+/* Shadows */
+.vibe-box--shadow-small {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.vibe-box--shadow-medium {
+  box-shadow: var(--shadow);
+}
+
+.vibe-box--shadow-large {
+  box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.15);
+}

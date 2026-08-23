@@ -7,6 +7,8 @@ import { SplitButton, SplitButtonMenu } from './components/SplitButton'
 import { Heading } from './components/Heading'
 import { ThemeProvider } from './components/ThemeProvider'
 import { Button } from './components/Button'
+import { Clickable } from './components/Clickable'
+import { Box } from './components/Box'
 import './App.css'
 
 function App() {
@@ -67,6 +69,15 @@ function App() {
               Themed
             </Button>
           </ThemeProvider>
+          <Clickable onClick={function Xs(){}}>
+            <Box
+              border
+              padding="small"
+              rounded="small"
+            >
+              I act like a button
+            </Box>
+          </Clickable>
         </div>
       </section>
 
