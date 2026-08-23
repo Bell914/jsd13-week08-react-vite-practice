@@ -1,18 +1,21 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import './Box.css';
 
-export function Box({
-  elementType = 'div',
-  border = false,
-  padding = 'none',
-  rounded = 'none',
-  shadow = 'none',
-  backgroundColor,
-  children,
-  className = '',
-  style = {},
-  ...props
-}) {
+export const Box = forwardRef(function Box(
+  {
+    elementType = 'div',
+    border = false,
+    padding = 'none',
+    rounded = 'none',
+    shadow = 'none',
+    backgroundColor,
+    children,
+    className = '',
+    style = {},
+    ...props
+  },
+  ref
+) {
   const Component = elementType;
 
   const borderClass = border ? 'vibe-box--border' : '';
@@ -27,6 +30,7 @@ export function Box({
 
   return (
     <Component
+      ref={ref}
       className={`vibe-box ${borderClass} ${paddingClass} ${roundedClass} ${shadowClass} ${className}`.trim()}
       style={inlineStyles}
       {...props}
@@ -34,6 +38,6 @@ export function Box({
       {children}
     </Component>
   );
-}
+});
 
 export default Box;

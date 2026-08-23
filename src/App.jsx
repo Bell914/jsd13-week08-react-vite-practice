@@ -12,6 +12,7 @@ import { Box } from './components/Box'
 import { ActiveDescendantOverview } from './components/ActiveDescendantOverview'
 import { AfterFirstRenderDemo } from './components/AfterFirstRenderDemo'
 import { ClickablePropsDemo } from './components/ClickablePropsDemo'
+import { EventListenerDemo } from './components/EventListenerDemo'
 import './App.css'
 
 function App() {
@@ -148,6 +149,13 @@ function App() {
       <section style={{ padding: '48px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
         <Heading>Clickable Props Hook</Heading>
         <ClickablePropsDemo />
+      </section>
+
+      <div className="ticks"></div>
+
+      <section style={{ padding: '48px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+        <Heading>Event Listener Hook</Heading>
+        <EventListenerDemo />
       </section>
 
       <div className="ticks"></div>
