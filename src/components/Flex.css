@@ -1,0 +1,82 @@
+/* Flex Layout Primitive */
+.vibe-flex {
+  display: flex;
+  box-sizing: border-box;
+}
+
+/* Direction */
+.vibe-flex--direction-row {
+  flex-direction: row;
+}
+
+.vibe-flex--direction-column {
+  flex-direction: column;
+}
+
+.vibe-flex--direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.vibe-flex--direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* Align */
+.vibe-flex--align-start {
+  align-items: flex-start;
+}
+
+.vibe-flex--align-center {
+  align-items: center;
+}
+
+.vibe-flex--align-end {
+  align-items: flex-end;
+}
+
+.vibe-flex--align-stretch {
+  align-items: stretch;
+}
+
+/* Justify */
+.vibe-flex--justify-start {
+  justify-content: flex-start;
+}
+
+.vibe-flex--justify-center {
+  justify-content: center;
+}
+
+.vibe-flex--justify-end {
+  justify-content: flex-end;
+}
+
+.vibe-flex--justify-between {
+  justify-content: space-between;
+}
+
+.vibe-flex--justify-around {
+  justify-content: space-around;
+}
+
+/* Gap */
+.vibe-flex--gap-xs {
+  gap: 4px;
+}
+
+.vibe-flex--gap-small {
+  gap: 8px;
+}
+
+.vibe-flex--gap-medium {
+  gap: 16px;
+}
+
+.vibe-flex--gap-large {
+  gap: 24px;
+}
+
+/* Wrap */
+.vibe-flex--wrap {
+  flex-wrap: wrap;
+}

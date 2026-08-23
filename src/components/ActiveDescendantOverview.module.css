@@ -1,0 +1,41 @@
+.overviewContainer {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px;
+}
+
+.listItem {
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--text-h);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.listItem:hover {
+  background: var(--accent-bg);
+  color: var(--accent);
+}
+
+.visualFocus {
+  background: var(--accent-bg);
+  color: var(--accent);
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+  font-weight: 600;
+}

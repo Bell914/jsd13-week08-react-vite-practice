@@ -9,6 +9,7 @@ import { ThemeProvider } from './components/ThemeProvider'
 import { Button } from './components/Button'
 import { Clickable } from './components/Clickable'
 import { Box } from './components/Box'
+import { ActiveDescendantOverview } from './components/ActiveDescendantOverview'
 import './App.css'
 
 function App() {
@@ -124,6 +125,13 @@ function App() {
             />
           </AccordionItem>
         </Accordion>
+      </section>
+
+      <div className="ticks"></div>
+
+      <section style={{ padding: '48px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '20px' }}>
+        <Heading>Active Descendant Focus</Heading>
+        <ActiveDescendantOverview />
       </section>
 
       <div className="ticks"></div>
