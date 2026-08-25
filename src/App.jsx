@@ -3,6 +3,7 @@ import { HeroSection } from './components/sections/HeroSection'
 import { MarqueeSection } from './components/sections/MarqueeSection'
 import { AboutSection } from './components/sections/AboutSection'
 import { ServicesSection } from './components/sections/ServicesSection'
+import { ProjectsSection } from './components/sections/ProjectsSection'
 
 function App() {
   const handleContactClick = () => {
@@ -25,6 +26,9 @@ function App() {
 
       {/* 4. Services Section */}
       <ServicesSection />
+
+      {/* 5. Projects Section */}
+      <ProjectsSection />
     </div>
   )
 }
