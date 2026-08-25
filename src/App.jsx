@@ -1,6 +1,7 @@
 import React from 'react'
 import { HeroSection } from './components/sections/HeroSection'
 import { MarqueeSection } from './components/sections/MarqueeSection'
+import { AboutSection } from './components/sections/AboutSection'
 
 function App() {
   const handleContactClick = () => {
@@ -17,6 +18,9 @@ function App() {
 
       {/* 2. Marquee Section */}
       <MarqueeSection />
+
+      {/* 3. About Section */}
+      <AboutSection onContactClick={handleContactClick} />
     </div>
   )
 }
