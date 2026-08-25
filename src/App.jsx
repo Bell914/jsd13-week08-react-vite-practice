@@ -2,6 +2,7 @@ import React from 'react'
 import { HeroSection } from './components/sections/HeroSection'
 import { MarqueeSection } from './components/sections/MarqueeSection'
 import { AboutSection } from './components/sections/AboutSection'
+import { ServicesSection } from './components/sections/ServicesSection'
 
 function App() {
   const handleContactClick = () => {
@@ -21,6 +22,9 @@ function App() {
 
       {/* 3. About Section */}
       <AboutSection onContactClick={handleContactClick} />
+
+      {/* 4. Services Section */}
+      <ServicesSection />
     </div>
   )
 }
